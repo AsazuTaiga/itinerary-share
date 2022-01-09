@@ -1,4 +1,11 @@
-import { AddIcon, ChatIcon, CloseIcon, CopyIcon } from "@chakra-ui/icons";
+import {
+  AddIcon,
+  ArrowDownIcon,
+  ArrowUpIcon,
+  ChatIcon,
+  CloseIcon,
+  CopyIcon,
+} from "@chakra-ui/icons";
 import {
   Heading,
   Stack,
@@ -173,6 +180,27 @@ const Home: NextPage = () => {
                                 <Circle size={8} bg="teal.400" color="white">
                                   {index + 1}
                                 </Circle>
+                                <Button
+                                  disabled={index === 0}
+                                  onClick={() =>
+                                    arrayHelpers.swap(index, index - 1)
+                                  }
+                                  leftIcon={<ArrowUpIcon />}
+                                >
+                                  順序を上へ
+                                </Button>
+                                <Button
+                                  disabled={
+                                    index === values.schedules.length - 1
+                                  }
+                                  onClick={() =>
+                                    arrayHelpers.swap(index, index + 1)
+                                  }
+                                  rightIcon={<ArrowDownIcon />}
+                                >
+                                  順序を下へ
+                                </Button>
+
                                 <Spacer />
                                 <IconButton
                                   aria-label="削除"
