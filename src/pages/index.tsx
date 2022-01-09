@@ -57,7 +57,7 @@ const formatValues = (values: FormValues) => {
       const descriptionText = description.replace(/\n/g, " ");
       return `　(${index + 1})
 　場所：${locationName}
-　日付:${dateText}
+　日付：${dateText}
 ${descriptionText ? `　説明：${descriptionText}` : ""}
 `;
     })
