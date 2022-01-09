@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 const Docuemnt = () => {
   return (
     <Html>
-      <Head>
+      <Head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
         <link
           rel="apple-touch-icon"
           sizes="180x180"
