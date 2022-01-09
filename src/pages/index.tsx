@@ -81,7 +81,6 @@ const Home: NextPage = () => {
           name="description"
           content="旅程をさっと作ってシェアしましょう！"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack gap={6}>
         <Text lineHeight={2}>
