@@ -62,7 +62,7 @@ ${descriptionText ? `　説明：${descriptionText}` : ""}
 `;
     })
     .join("\n");
-  return `旅程シェア（https://itineraryshare.com）で旅程を作成したよ！
+  return `旅程シェア（https://www.itineraryshare.app）で旅程を作成したよ！
  
 旅のテーマ：${theme}
 参加者：${partyText}
